@@ -70,8 +70,9 @@ return function( number, properties, pluralGenerator ) {
 
 	var compactPattern, compactDigits, compactProperties, divisor, pluralForm, rounded;
 	if ( compactMap ) {
-		var zeroes = Array(Math.floor(number).toString().length).join( "0" );
+		var zeroes = Array( Math.floor( number ).toString().length ).join( "0" );
 		if ( zeroes.length >= 3 ) {
+
 			// use default plural form to perform initial decimal shift
 			compactPattern = compactMap[ "1" + zeroes + "-count-other" ];
 			compactDigits = compactPattern.split( "0" ).length - 1;
@@ -79,9 +80,9 @@ return function( number, properties, pluralGenerator ) {
 			number = number / Math.pow( 10, divisor );
 
 			// calculate rounded value to determine plural form and extract correct pattern
-			rounded = parseInt(numberFormatIntegerFractionDigits( number, minimumIntegerDigits,
-				minimumFractionDigits, maximumFractionDigits, round, roundIncrement ));
-			pluralForm = pluralGenerator ? pluralGenerator(rounded) : "other";
+			rounded = parseInt( numberFormatIntegerFractionDigits( number, minimumIntegerDigits,
+				minimumFractionDigits, maximumFractionDigits, round, roundIncrement ) );
+			pluralForm = pluralGenerator ? pluralGenerator( rounded ) : "other";
 			compactPattern = compactMap[ "1" + zeroes + "-count-" + pluralForm ] || compactPattern;
 			compactProperties = compactPattern.match( numberPatternRe );
 
