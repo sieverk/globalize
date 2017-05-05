@@ -7,7 +7,7 @@
  * Released under the MIT license
  * http://jquery.org/license
  *
- * Date: 2017-05-02T19:54Z
+ * Date: 2017-05-05T17:52Z
  */
 (function( root, factory ) {
 
