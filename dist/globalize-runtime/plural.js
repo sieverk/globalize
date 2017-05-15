@@ -7,10 +7,10 @@
  * Released under the MIT license
  * http://jquery.org/license
  *
- * Date: 2017-05-05T17:52Z
+ * Date: 2017-05-15T18:12Z
  */
 /*!
- * Globalize Runtime v1.2.2 2017-05-05T17:52Z Released under the MIT license
+ * Globalize Runtime v1.2.2 2017-05-15T18:12Z Released under the MIT license
  * http://git.io/TrdQbw
  */
 (function( root, factory ) {
